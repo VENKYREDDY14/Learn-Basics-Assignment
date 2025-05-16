@@ -1,0 +1,4 @@
+SELECT id, school_name, class, section, student_name, roll_number FROM public.student_data
+WHERE school_name ILIKE {{SchoolDropdown.selectedOptionValue || '%'}}
+AND class ILIKE {{ClassDropdown.selectedOptionValue || '%'}}
+AND section ILIKE {{SectionDropdown.selectedOptionValue || '%'}}
